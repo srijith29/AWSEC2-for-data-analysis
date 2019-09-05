@@ -1,0 +1,15 @@
+## Create AWS Account and spin up an EC2 instance from launch instance by going to EC2 Dashboard
+## Choose the version of the server you want to run (this case Ubuntu free tier)
+## Create a key pair to connect securely. Select create a new key pair which will output a .pem file . Kepp it in a safe place.
+## Click on View Instances , once initialized EC2 instance is ready 
+## From Windows machine connect to the instance using putty. Download putty and puttygen
+## Puttygen is used to convert the previously downloaded .pem file to a .ppk file. This will be used to authenticate between the terminal and EC2 Instance.
+## Open .pem file with Putyygen and click save private key option and save it as .ppk (Select all files for the Puttygen to see the .pem file)
+## Open putty , put host name from the EC2 Instance, to know the host name go to running instance and select connect
+## Default SSH Client option is selected
+## Public DNS address is given under "Connect to your instance using its Public DNS:"
+## User name will be given in the Example script (usually ubuntu)
+## Copy these information, go back to putty and copy the host name (DNS address at step 10)
+## Go to connection data and put auto login user name as the same user name discussed at step 11 (Alternatively username@hostname can be put at the host name screen)
+## Go to SSH Auth and browse to the .ppk file which was created at step 7)
+Connect
